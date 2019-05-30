@@ -39,11 +39,13 @@ function total() {
   return total;
 }
 
-function removeFromCart(item) {
-  let i = 0;
-      cart.splice(i, 1);
+function removeFromCart(item) { 
+  for (var i = 0; i < cart.length; i++){
+    if (item === cart[i].itemName) {
+      cart.splice(i, 1); //removes 1 item at index i
       return cart;
     }
+  }
 
 function removeFromPlaylist(playlist, artistName){
   delete playlist[artistName];
