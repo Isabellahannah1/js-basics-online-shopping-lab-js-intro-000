@@ -53,13 +53,12 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  cart = [];
-var firstString = "Sorry, we don't have a credit card on file for you.";
-var secondString = `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`;
+  var string = `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`;
   if (cardNumber === undefined) {
-    return firstString;
+    return "Sorry, we don't have a credit card on file for you.";
   }
   else {
-    return secondString;
-}
+    cart = [];
+    return string; 
+  }
 }
