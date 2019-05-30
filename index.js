@@ -60,7 +60,5 @@ var secondString = `Your total cost is $${total()}, which will be charged to the
   }
   else if (cardNumber >= 1) {
     return secondString;
-  }
-else {return cart = [];
 }
 }
