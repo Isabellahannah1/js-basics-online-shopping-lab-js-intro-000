@@ -40,7 +40,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  delete itemPrice// write your code here
+  delete itemObj;// write your code here
 }
 
 function removeFromPlaylist(playlist, artistName){
