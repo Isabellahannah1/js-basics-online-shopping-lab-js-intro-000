@@ -47,22 +47,7 @@ function removeFromCart(item) {
     }
   }
 
-function removeFromPlaylist(playlist, artistName){
-  delete playlist[artistName];
-  return playlist;
-}
-
-describe("removeFromCart()", function() {
-  it("removes the specified item from the cart", function() {
-    addToCart("vanilla");
-    addToCart("watermelon");
-    addToCart("yams");
-
-    removeFromCart("watermelon");
-
-    const firstItemName = getCart()[0].itemName;
-    const secondItemName = getCart()[1].itemName;
-
+r
     expect(firstItemName).toEqual("vanilla");
     expect(secondItemName).toEqual("yams");
 
