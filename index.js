@@ -40,6 +40,7 @@ function total() {
 }
 
 function removeFromCart(item) {
+  let i = 0;
       cart.splice(i, 1);
       return cart;
     }
